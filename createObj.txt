@@ -1,0 +1,60 @@
+import java.util.Scanner;
+class student{
+    String name;
+    int beng,eng,math,geo,coma,total;
+    float grade ,avg;
+
+    public void grade(){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter your name:- ");
+        name=scan.nextLine();
+        System.out.println("Enter your marks:");
+        System.out.print("bengali: ");
+        beng=scan.nextInt();
+        System.out.print("Englis: ");
+        eng=scan.nextInt();
+        System.out.print("Mathemetics: ");
+        math=scan.nextInt();
+        System.out.print("Geography: ");
+        geo=scan.nextInt();
+        System.out.print("Computer application: ");
+        coma=scan.nextInt();
+        total=beng+eng+math+geo+coma;
+        System.out.println("Total marks is: "+total);
+        avg=total/5;
+        System.out.println("Avarage: "+avg);
+        
+        int n=(int)(avg/10);
+        switch(n){
+            case 9: System.out.println("Grade: A++");
+                     break;
+            case 8: System.out.println("Grade: A+");
+                     break;
+            case 7: System.out.println("Grade: B+");
+                    break;
+            case 6:System.out.println("Grade: B");
+                     break;
+            case 5:System.out.println("Grade: Pass");
+                     break;
+            default :System.out.println("Fail");
+                
+        }
+    }
+}
+
+class createObj{
+    public static void main(String[] args){      
+
+        System.out.println("How many record do you have to enter");
+        int p=scan.nextInt;
+        String a[11]; 
+        int i;
+        for(i=1;i<=p;i++){
+            System.out.println("Enter Object Name: ");
+            String arr[i]=scan.nextLine;
+                student  = new student();
+
+        }
+      
+    }
+}
